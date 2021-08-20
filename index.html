@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,14 +13,60 @@
     <!--------------- Custome Css File --------------->
     <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
- 
-    
-
-
-
+    <main>
+        <section>
+            <div class="grid lg:grid-cols-2 grid-cols-1">
+                <div class="product-img text-center mb-12">
+                    <img class="lg:w-9/12 w-8/12 mx-auto" src="./resource/mac.png" alt="">
+                </div>
+                <div class="product-info">
+                    <h1 class="lg:text-4xl text-2xl font-semibold font-serif">Customize Your Blue 24-inch iMac with Apple M1 chip.</h1>
+                    <p class="pt-4 mb-12 text-justify text-gray-600">Apple M1 chip with 8-core CPU with 4performance cores and efficiency cores, 7-cores GPu and 16-core Netural Engine 8-GB unifield memory 256-GB SSD storage Two Thunderbolt / USB 4-ports Magic Mouse Magic Keyboard.</p>
+                     <!--------------- Memory Select Area --------------->
+                    <div class="memory-area mb-8">
+                        <h4 class="pb-4 font-bold lg:text-xl">Memory :</h4>
+                        <button class=" mr-2 mb-2">8-GB unified memory</button>
+                        <button class="">16-GB unified memory</button>
+                    </div>
+                    <!--------------- Storage Select Area --------------->
+                    <div class="storage-area mb-8">
+                        <h4 class="pb-4 font-bold lg;text-xl">Storage :</h4>
+                        <button class="mr-2 mb-2">256-GB SSD Storage</button>
+                        <button class="mr-2 mb-2">512-GB SSD Storage</button>
+                        <button class="mr-2 mb-2">1-TB SSD Storage</button>
+                    </div>
+                    <!--------------- Delivery Option Select Area --------------->
+                    <div class="delivery-area mb-8">
+                        <h4 class="pb-4 font-bold lg;text-xl">Choose Your Delivery Option :</h4>
+                        <button class="mr-2 mb-2">Free Prime Delivery (Late)</button>
+                        <button class="mr-2 mb-2">Delivery Charge $20 (Fast)</button>
+                    </div>
+                    <!--------------- Price Calculation Area --------------->
+                    <div class="grid grid-cols-2 my-12 price-calculate">
+                        <div class="price-name">
+                            <h3>Best Price :</h3>
+                            <h3>Extra Memory Cost :</h3>
+                            <h3>Extra Storage Cost :</h3>
+                            <h3>Delivery :</h3>
+                            <h4 class="text-2xl font-bold">Total Price :</h4>
+                        </div>
+                        <div class="price-amount">
+                            <h3>$ <span>1299</span></h3>
+                            <h3>$ <span>0</span></h3>
+                            <h3>$ <span>0</span></h3>
+                            <h3>$ <span>0</span></h3>
+                            <h4 class="text-2xl font-bold">$ <span>0</span></h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
 
     <!--------------- Custome js File --------------->
     <script src="./js/app.js"></script>
 </body>
+
 </html>
