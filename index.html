@@ -50,7 +50,7 @@
                             <h3>Extra Memory Cost :</h3>
                             <h3>Extra Storage Cost :</h3>
                             <h3>Delivery :</h3>
-                            <h4 class="text-2xl font-bold">Total Price :</h4>
+                            <h4 class="text-2xl font-bold">Estimate Price :</h4>
                         </div>
                         <div class="price-amount">
                             <h3>$ <span id="macBook-Price">1299</span></h3>
@@ -60,13 +60,21 @@
                             <h4 class="text-2xl font-bold">$<span id="delivery-price">1299</span></h4>
                         </div>
                     </div>
+                    <!--------------- Price discount Area --------------->
+                    <div class="discount-area mb-8">
+                        <h3 class="pb-4 font-semibold lg;text-xl">Add Promo Code :</h3>
+                        <input id="cupon-input" class="form-control promo-code" type="text">
+                        <button id="cupon-button">Apply</button>
+                        <h4 id="error">😥 Sorry,I can't give any discount. Cause Your cupon was invalid 🚫 .</h4>
+                    </div>
                 </div>
             </div>
         </section>
+        <div class="discount-price text-center">
+            <h2 class="lg:text-4xl">Total Price : $ <span id="discount-price">1299</span></h2>
+        </div>
     </main>
-
     <!--------------- Custome js File --------------->
     <script src="./js/app.js"></script>
 </body>
-
 </html>

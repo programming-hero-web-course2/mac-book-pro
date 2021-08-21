@@ -62,16 +62,41 @@ document.getElementById("fast-delivery").addEventListener("click", function(){
     deliveryCost(true);
 });
 // Total Mac-Book Price
+function getPrice(product){
+    const productPrice = document.getElementById(product + "-price").innerText;
+    const productPriceInt = parseInt(productPrice);
+    return productPriceInt;
+};
 function totalPrice(){
     const macBookPrice = document.getElementById("macBook-Price").innerText = 1299;
-    const memoryPrice = document.getElementById("memory-price").innerText;
-    const memoryPriceInt = parseInt(memoryPrice);
-    const storgePrice = document.getElementById("stroage-price").innerText;
-    const storgePriceInt = parseInt(storgePrice);
+    const memoryPrice = getPrice("memory");
+    const storgePrice = getPrice("stroage");
     const deliveryCharge = document.getElementById("delivery-charge").innerText;
     const deliveryChargeInt = parseInt(deliveryCharge);
-    const totalProductPrice = macBookPrice + memoryPriceInt + storgePriceInt + deliveryChargeInt;
+    const totalProductPrice = macBookPrice + memoryPrice + storgePrice + deliveryChargeInt;
     document.getElementById("delivery-price").innerText = totalProductPrice;
-    
-    
+    document.getElementById("discount-price").innerText = totalProductPrice;
 };
+// Cupon code
+function cuponPercentage(){
+    const discountPrice = document.getElementById("discount-price");
+    const previousPrice = parseInt(discountPrice.innerText);
+    const cuponPercentage = previousPrice/100*20;
+    const afterCuponPrice = previousPrice - cuponPercentage;
+    const finalPrice = afterCuponPrice.toFixed(2);
+    return finalPrice;
+};
+document.getElementById("cupon-button").addEventListener("click",function(){
+    const cuponCodeInput =  document.getElementById("cupon-input");
+    const cuponCode = cuponCodeInput.value.toLowerCase();
+    const errorMessage = document.getElementById("error");
+    if(cuponCode === "stevekaku"){
+    document.getElementById("discount-price").innerText = cuponPercentage();
+    errorMessage.style.display="none";
+   }
+   else{
+    errorMessage.style.display="block";
+   };
+//    Input String Clear
+   cuponCodeInput.value = ""; 
+});

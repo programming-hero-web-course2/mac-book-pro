@@ -26,6 +26,39 @@ button:hover{
     font-weight: bold;
 }
 .price-calculate h4{
-    color: #d24545;
+    color: #000080;
 
+}
+/* ------- Price Discount Area  ----- */
+.promo-code{
+    border: 1px solid #00000087;
+    padding: 5px 8px;
+    border-radius:10px;
+}
+.discount-area button{
+    background-color: #bd1717ae;
+    border: none;
+    color: #fff;
+    padding: 8px 15px;
+    font-weight: 500;
+}
+.discount-area button:hover{
+    background-color:#bd1717;
+    
+}
+.discount-price h2{
+    border-top: 2px solid lightgray;
+    color: #d24545;
+    padding:20px 0;
+    font-weight: 500;
+}
+.discount-area h4{
+    display: none;
+    background-color:#f51616ae;
+    text-align: center;
+    margin-top: 20px;
+    color: #fff;
+    border-radius: 10px;
+    padding:5px 0;
+    font-weight: 500;
 }
