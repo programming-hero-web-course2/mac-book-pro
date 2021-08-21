@@ -27,21 +27,21 @@
                      <!--------------- Memory Select Area --------------->
                     <div class="memory-area mb-8">
                         <h4 class="pb-4 font-bold lg:text-xl">Memory :</h4>
-                        <button class=" mr-2 mb-2">8-GB unified memory</button>
-                        <button class="">16-GB unified memory</button>
+                        <button id="memory-8GB" class=" mr-2 mb-2">8-GB unified memory</button>
+                        <button id="memory-16GB" class="">16-GB unified memory</button>
                     </div>
                     <!--------------- Storage Select Area --------------->
                     <div class="storage-area mb-8">
                         <h4 class="pb-4 font-bold lg;text-xl">Storage :</h4>
-                        <button class="mr-2 mb-2">256-GB SSD Storage</button>
-                        <button class="mr-2 mb-2">512-GB SSD Storage</button>
-                        <button class="mr-2 mb-2">1-TB SSD Storage</button>
+                        <button id="stroage-256GB" class="mr-2 mb-2">256-GB SSD Storage</button>
+                        <button id="stroage-512GB" class="mr-2 mb-2">512-GB SSD Storage</button>
+                        <button id="stroage-1TB" class="mr-2 mb-2">1-TB SSD Storage</button>
                     </div>
                     <!--------------- Delivery Option Select Area --------------->
                     <div class="delivery-area mb-8">
                         <h4 class="pb-4 font-bold lg;text-xl">Choose Your Delivery Option :</h4>
-                        <button class="mr-2 mb-2">Free Prime Delivery (Late)</button>
-                        <button class="mr-2 mb-2">Delivery Charge $20 (Fast)</button>
+                        <button id="late-delivery" class="mr-2 mb-2">Free Prime Delivery (Late)</button>
+                        <button id="fast-delivery" class="mr-2 mb-2">Delivery Charge $20 (Fast)</button>
                     </div>
                     <!--------------- Price Calculation Area --------------->
                     <div class="grid grid-cols-2 my-12 price-calculate">
@@ -54,9 +54,9 @@
                         </div>
                         <div class="price-amount">
                             <h3>$ <span>1299</span></h3>
-                            <h3>$ <span>0</span></h3>
-                            <h3>$ <span>0</span></h3>
-                            <h3>$ <span>0</span></h3>
+                            <h3>$ <span id="memory-price">0</span></h3>
+                            <h3>$ <span id="stroage-price">0</span></h3>
+                            <h3>$ <span id="delivery-charge">0</span></h3>
                             <h4 class="text-2xl font-bold">$ <span>0</span></h4>
                         </div>
                     </div>
